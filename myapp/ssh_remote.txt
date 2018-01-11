@@ -1,0 +1,1 @@
+ssh -i "amazonkey_2018_1_9.pem" ubuntu@ec2-52-201-249-181.compute-1.amazonaws.com

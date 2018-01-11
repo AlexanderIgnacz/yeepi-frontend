@@ -1277,14 +1277,13 @@ export default class ExploreTasks extends React.Component {
   
                 </div>
             }
-  
-            
+
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.hideOfferModal}>{ lang.close }</Button>
           </Modal.Footer>
         </Modal>
-        
+
       </div>
     )
   }

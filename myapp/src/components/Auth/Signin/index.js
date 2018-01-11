@@ -69,6 +69,7 @@ export default class Signin extends React.Component {
             config.imagePreviewUrl = res.body.imagePreviewUrl;
             if (res.body.userstatus === "Active") { // can log in
               reactLocalStorage.set('loggedToken', res.body.token);
+              reactLocalStorage.set('loggedEmail', email.toLowerCase());
               this.makeChatUser(res.body.email.toLowerCase(), res.body.username, res.body.signupStep);
             } else if (res.body.userstatus === "Inactive") { // can't log in
               this.setState({ loginState: 1 });
